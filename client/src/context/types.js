@@ -1,0 +1,2 @@
+const ADD_REMARK = 'ADD_REMARK';
+const GET_REMARKS = 'GET_REMARKS';
