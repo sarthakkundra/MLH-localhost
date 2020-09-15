@@ -1,12 +1,15 @@
 import React from 'react';
+
 import { Typography } from 'antd'
 const { Title, Paragraph } = Typography
 
-function RemarkItem() {
+const RemarkItem = ({ name, comment}) => {
+
+
     return (
         <div style={remarkBox}>
-            <Title level={5}>Test Name</Title>
-            <Paragraph>lorem20</Paragraph>
+            <Title level={5}>{name}</Title>
+            <Paragraph>{comment}</Paragraph>
         </div>
     )
 }

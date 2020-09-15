@@ -11,7 +11,7 @@ export default (state, action) => {
     case ADD_REMARK:
       return {
         ...state,
-        remarks: state.remarks.push(action.payload),
+        remarks: [...state.remarks, action.payload],
       };
 
     default:

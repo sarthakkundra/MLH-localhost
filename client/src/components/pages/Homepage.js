@@ -3,7 +3,7 @@ import React from "react";
 import { Row, Col } from "antd";
 
 import FullForm from "../Form";
-import RemarkItem from '../remarks/RemarkItem'
+import Remarks from '../remarks/Remarks'
 
 const Homepage = () => {
   return (
@@ -13,7 +13,7 @@ const Homepage = () => {
           <FullForm />
         </Col>
         <Col span={12}>
-          <RemarkItem />
+          <Remarks />
         </Col>
       </Row>
     </div>

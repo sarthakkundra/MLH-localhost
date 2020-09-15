@@ -1,13 +1,17 @@
 import React from 'react';
 
-import HomePage from './components/pages/Homepage'
+import HomePage from './components/pages/Homepage';
+
+import RemarkState from './context/RemarkState';
 import './App.css';
 
-function App() {
+const App = ()  => {
   return (
+    <RemarkState>
     <div className="App">
       <HomePage />
     </div>
+    </RemarkState>
   );
 }
 

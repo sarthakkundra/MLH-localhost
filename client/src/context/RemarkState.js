@@ -6,17 +6,18 @@ import axios from "axios";
 
 import { ADD_REMARK, GET_REMARKS } from "./types";
 
-const remarkState = (props) => {
-  const initalState = {
-    remarks: [],
+const RemarkState = (props) => {
+  const initialState = {
+    remarks: null,
   };
 
   const [state, dispatch] = useReducer(RemarkReducer, initialState);
 
   const getRemarks = async () => {
     try {
-      const remarks = await axios.get("/users");
-      dispatch({ type: GET_REMARKS, payload: remarks });
+      const remarks = await axios.get("http://localhost:5000/api/users");
+      dispatch({ type: GET_REMARKS, payload: remarks.data });
+      console.log(state.remarks)
     } catch (e) {
       console.error(e);
     }
@@ -30,7 +31,7 @@ const remarkState = (props) => {
     };
 
     try {
-      await axios.post("/users", remark, config);
+      await axios.post("http://localhost:5000/api/users", remark, config);
       dispatch({ type: ADD_REMARK, payload: remark });
     } catch (e) {
       console.error(e);
@@ -50,4 +51,4 @@ const remarkState = (props) => {
   );
 };
 
-export default remarkState;
+export default RemarkState;
