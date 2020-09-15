@@ -44,3 +44,7 @@ Being a project of an open source competition, we believe in the power of PRs as
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+
+## Now it's time
+<img src="https://68.media.tumblr.com/f1eed43b5d730dff0be67e2a6f993dce/tumblr_nzodlzcGne1so18vqo1_500.gif">
