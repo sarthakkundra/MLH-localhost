@@ -20,11 +20,15 @@ Follow the steps described below to get a local copy of this app up and running!
 ```sh
 git clone https://github.com/github_username/MLH-localhost.git
 ```
-3. Install all the depedencies :- In the root directory run the following commands
+3. Install all the depedencies :-<br> In the root directory run the following command
 ```sh
 npm install
-npm run clientinstall
 ```
+Migrate to the client folder and run the following command.
+```sh
+npm install
+```
+
 4 Setup the ENV variables <br>
     (i) Make a `.env` file in the root directory. <br>
     (ii) Create the following environment variables: `PORT` and set it equal to any port you like. For Eg :- PORT=5000, `MONGO_URI` and set it equal to the string provided. For Eg :- MONGO_URI = 'provided string'. <br>
