@@ -1,4 +1,4 @@
-import { ADD_REMARK, GET_REMARKS } from "./types";
+import { ADD_REMARK, GET_REMARKS, SET_LOADING } from "./types";
 
 export default (state, action) => {
   switch (action.type) {

@@ -17,7 +17,7 @@ const RemarkItem = ({ name, comment}) => {
 const remarkBox = {
     width: '80%',
     height: '8rem',
-    backgroundColor: 'red',
+    backgroundColor: 'grey',
     margin: '50px',
     padding: '25px',
 }

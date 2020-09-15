@@ -1,14 +1,15 @@
 const express = require('express');
 const cors = require('cors');
 
+require('dotenv').config()
 const connectDB = require('./config/db');
+
 
 const app = express();
 connectDB();
 app.use(express.json({extended: false}));
 app.use(cors());
 
-const port = 5000;
 
 app.get('/', (req, res) => {
     res.send('Hello Express!')
@@ -16,6 +17,6 @@ app.get('/', (req, res) => {
 
 app.use('/api/users', require('./routes/user'));
 
-app.listen(port, () => {
-    console.log(`Server up on port ${port}`)
+app.listen(process.env.PORT, () => {
+    console.log(`Server up on port ${process.env.PORT}`)
 })

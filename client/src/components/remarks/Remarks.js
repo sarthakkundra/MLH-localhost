@@ -14,7 +14,7 @@ const Remarks = () => {
 
     return (
         <div>
-            {remarks !== null ? (remarks.map((remark) => <RemarkItem name={remark.name} comment={remark.remarks} />)) : <h1>Loading</h1>}
+            {remarks !== null  ? (remarks.map((remark) => <RemarkItem name={remark.name} comment={remark.remarks} />)) : <h1>Loading</h1>}
         </div>
     )
 }

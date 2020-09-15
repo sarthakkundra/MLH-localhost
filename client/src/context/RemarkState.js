@@ -4,7 +4,7 @@ import RemarkReducer from "./RemarkReducer";
 
 import axios from "axios";
 
-import { ADD_REMARK, GET_REMARKS } from "./types";
+import { ADD_REMARK, GET_REMARKS, SET_LOADING } from "./types";
 
 const RemarkState = (props) => {
   const initialState = {
@@ -37,6 +37,7 @@ const RemarkState = (props) => {
       console.error(e);
     }
   };
+
 
   return (
     <RemarkContext.Provider
