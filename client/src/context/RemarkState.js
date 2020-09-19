@@ -32,7 +32,8 @@ const RemarkState = (props) => {
 
     try {
       await axios.post("http://localhost:5000/api/users", remark, config);
-      dispatch({ type: ADD_REMARK, payload: remark });
+      const remarks = await axios.get("http://localhost:5000/api/users");
+      dispatch({ type: ADD_REMARK, payload: remarks.data });
     } catch (e) {
       console.error(e);
     }
